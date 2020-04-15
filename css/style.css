@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +11,8 @@
     font-family: "Roboto", sans-serif;
 }
 
-html, body {
+html, body, #outer {
+    position: relative;
     width: 100%;
     height: 100%;    
 }
@@ -22,6 +24,55 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.word-line {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.word-line > .box {
+    float: left;
+    width: 280px;
+    height: 45%;
+    margin: 15px 18px;
+    padding: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+}
+
+.box > span.word-title {
+    display: block;
+    width: 85%;
+    margin: 20px auto 25px auto;
+    padding: 7px 0;
+    text-align: center;    
+    background-color: #7686df;
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 50px;
+}
+
+.box > p.word-text {
+    width: 85%;
+    margin: 13px auto 0 auto;
+    padding: 5px 5px;
+    border-bottom: 1.5px dotted #ddd;
+    font-size: 12px;
 }

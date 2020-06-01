@@ -16,10 +16,6 @@
     <title>오늘의 단어</title>    
 </head>
 <body>
-    <div class="container">
-        <div class="box">
-            <div class="clock"></div>
-        </div>
-    </div>
+    
 </body>
 </html>
